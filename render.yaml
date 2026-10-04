@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: muse-app-builder-server
+    runtime: docker
+    plan: free
+    envVars:
+      - key: PORT
+        value: "8000"
+      - key: ANDROID_SDK_ROOT
+        value: /opt/android-sdk

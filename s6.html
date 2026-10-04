@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Splash</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%}
+body{background:#0f0f14;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;overflow:hidden}
+img{width:96px;height:96px;border-radius:24px;box-shadow:0 8px 32px rgba(0,0,0,.5)}
+h1{color:#fff;font-size:32px;font-weight:700;margin-top:24px}
+.dots{display:flex;gap:10px;margin-top:22px}
+.dots span{width:12px;height:12px;border-radius:50%;background:#8b8b9e;animation:tp 1.2s ease-in-out infinite}
+.dots span:nth-child(2){animation-delay:.15s}.dots span:nth-child(3){animation-delay:.3s}
+@keyframes tp{0%,60%,100%{transform:translateY(0);background:#8b8b9e}30%{transform:translateY(-12px);background:#fff}}
+</style>
+</head>
+<body>
+<img src="icon.png" alt="app icon">
+<h1>__APP_NAME__</h1>
+<div class="dots"><span></span><span></span><span></span></div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Splash</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%}
+body{background:#0a0a10;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;overflow:hidden;position:relative}
+.grid{position:absolute;inset:0;
+background-image:radial-gradient(circle,rgba(255,255,255,.14) 2px,transparent 2.5px);
+background-size:44px 44px;background-position:center;
+-webkit-mask-image:linear-gradient(115deg,transparent 20%,#000 42%,#000 58%,transparent 80%);
+mask-image:linear-gradient(115deg,transparent 20%,#000 42%,#000 58%,transparent 80%);
+-webkit-mask-size:300% 300%;mask-size:300% 300%;animation:sweep 2s ease-in-out infinite}
+@keyframes sweep{0%{-webkit-mask-position:100% 0;mask-position:100% 0}100%{-webkit-mask-position:0 100%;mask-position:0 100%}}
+.gridbase{position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,.05) 2px,transparent 2.5px);background-size:44px 44px;background-position:center}
+.wrap{display:flex;flex-direction:column;align-items:center;z-index:1}
+.wrap img{width:96px;height:96px;border-radius:24px;box-shadow:0 8px 32px rgba(0,0,0,.5)}
+.wrap h1{color:#fff;font-size:32px;font-weight:700;margin-top:24px}
+</style>
+</head>
+<body>
+<div class="gridbase"></div><div class="grid"></div>
+<div class="wrap">
+<img src="icon.png" alt="app icon">
+<h1>__APP_NAME__</h1>
+</div>
+</body>
+</html>
